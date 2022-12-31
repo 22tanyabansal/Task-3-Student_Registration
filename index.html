@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Student Registration Form</h1>
+        <div class="container left">
+            <div id="student_details">
+                <form name="StudentRegistration">
+                    <table class="container left" id="details" cellpadding="4" ,width="50%" ,align="center"
+                        ,bgcolor="#99FFFF" ,cellspacing="2">
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="textname" id="textname" class="width clear_inp" size="20"
+                                    placeholder="Enter Name"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Email id</td>
+                            <td><input type="text" name="email" id="email" class="width clear_inp" size="25"
+                                    placeholder="Enter email"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Website</td>
+                            <td><input type="url" name="website" id="website" class="clear_inp" size="25"
+                                    placeholder="Enter website link"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Image link</td>
+                            <td><input type="file" name="img" id="img" class="clear_inp" accept="image/*"
+                                    class="clr_inp"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Gender</td>
+                            <td><input type="radio" name="sex" value="male" id="sex" size="20">Male</input>
+                                <input type="radio" name="sex" value="female" id="sex" size="20">Female</input>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Skills</td>
+                            <td><input type="checkbox" name="skills" id="skills" value="Java" size="20">Java</input>
+                                <input type="checkbox" name="skills" id="skills" value="html" size="20">HTML</input>
+                                <input type="checkbox" name="skills" id="skills" value="css" size="20">CSS</input>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><button type="button" id="submit">Enroll Student</button></td>
+                            <td><button type="button" id="clear">Clear</td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="container right">
+            <div id="output"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
