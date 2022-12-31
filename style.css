@@ -1,0 +1,147 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(219, 142, 90, 0.377);
+    font-size: 1rem;
+}
+
+h1 {
+    padding: 7px;
+    background-color:rgb(19, 189, 201) ;
+    color: rgb(9, 6, 9);
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    position: fixed;
+}
+
+/* Left Part */
+#student_details {
+    position: fixed;
+    height: 600px;
+    width: 47%;
+    border-right: 3px solid black;
+    margin-top: 40px;
+    padding: 4%;
+    padding: 30px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+input {
+    border-radius: 15px;
+    padding: 10px;
+    height: 2rem;
+    margin-top: 10px;
+    height: fit-content;
+    margin-left: 30px;
+}
+
+input:focus {
+    outline-color: rgb(179, 37, 73);
+}
+
+input[type=file]::file-selector-button {
+    background-color:rgb(162, 245, 115);
+    color: rgb(255, 0, 0);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: rgb(22, 204, 236);
+    color: #eb1e1e;
+}
+
+.width {
+    width: 80%;
+    padding-left: 5px;
+}
+
+
+#clear {
+    float: right;
+    background-color: rgb(228, 137, 77);
+    width: 40%;
+}
+
+
+button{
+    width: 70%;
+    border-radius: 7px;
+    background-color:rgb(119, 172, 232)  ;
+    color: black;
+    padding: 12px;
+    transition: 0.5s;
+    font-size: 600;
+}
+
+
+/* Right Box */
+
+#output {
+    position: absolute;
+    width: 80%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    float: right;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid  hsl(19, 75%, 55%);;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+.info {
+    overflow-wrap: break-word;
+    border: 1px solid hsl(19, 75%, 55%);
+    width: 70%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.image {
+    border: 2px solid rgba(0, 0, 0, 0.329);
+    width: 30%;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
